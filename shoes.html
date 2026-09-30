@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shoes | Ngam's Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ngam's collections</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoes.html" class="active">Shop Shoes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="shop-container">
+        <h2>Our Latest Drops</h2>
+        
+        <div class="product-grid">
+            <!-- Shoe 1 -->
+            <div class="product-card">
+                <img src="images/shoe1.jpg" alt="My First Shoe" class="shoe-img">   
+                <h3>Betty red poka heel</h3>
+                <p style="color: #bbb; font-size: 14px; margin-bottom: 10px;">Slay with ease.</p>
+                <p class="price">$65.00</p>
+                <button class="buy-btn" onclick="addToCart('Betty red poka heel')">Add to Cart</button>
+            </div>
+
+            <!-- Shoe 2 -->
+            <div class="product-card">
+                <img src="images/shoe2.jpg" alt="My Second Shoe" class="shoe-img">
+                <h3>Betty glitter heel</h3>
+                <p style="color: #bbb; font-size: 14px; margin-bottom: 10px;">Quality at a low price.</p>
+                <p class="price">$75.00</p>
+                <button class="buy-btn" onclick="addToCart('Betty glitter heel')">Add to Cart</button>
+            </div>
+
+            <!-- Shoe 3 -->
+            <div class="product-card">
+                <img src="images/shoe3.jpg" alt="My Third Shoe" class="shoe-img">
+                <h3>Betty classy heel</h3>
+                <p style="color: #bbb; font-size: 14px; margin-bottom: 10px;">made with leather.</p>
+                <p class="price">$90.00</p>
+                <button class="buy-btn" onclick="addToCart('Betty classy heel')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
