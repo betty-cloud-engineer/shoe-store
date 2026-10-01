@@ -3,50 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Shoes | Ngam's Collection</title>
+    <title>Our Shoes | KickZone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header Navigation -->
     <header>
-        <div class="logo">Ngam's collections</div>
+        <div class="logo">Betty's World</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shoes.html" class="active">Shop Shoes</a></li>
+                <li>
+                    <button class="cart-toggle-btn" onclick="toggleCart()">
+                        🛒 Cart <span id="cart-count">0</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <!-- Sliding Shopping Cart Panel Overlay -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-btn" onclick="toggleCart()">×</button>
+        </div>
+        
+        <div id="cart-items-container" class="cart-items-container">
+            <p class="empty-message">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Restored Main Shop Container with Grid System -->
     <main class="shop-container">
         <h2>Our Latest Drops</h2>
         
         <div class="product-grid">
             <!-- Shoe 1 -->
             <div class="product-card">
-                <img src="images/shoe1.jpg" alt="My First Shoe" class="shoe-img">   
-                <h3>Betty red poka heel</h3>
-                <p style="color: #bbb; font-size: 14px; margin-bottom: 10px;">Slay with ease.</p>
-                <p class="price">$65.00</p>
-                <button class="buy-btn" onclick="addToCart('Betty red poka heel')">Add to Cart</button>
+                <img src="images/shoe1.jpg" alt="Red pokie heel" class="shoe-img">
+                <h3>Red pokie heel</h3>
+                <p class="price">$120.00</p>
+                <button class="buy-btn" onclick="interactiveAddToCart('Red pokie heel', 120.00, 'images/shoe1.jpg')">Add to Cart</button>
             </div>
 
             <!-- Shoe 2 -->
             <div class="product-card">
-                <img src="images/shoe2.jpg" alt="My Second Shoe" class="shoe-img">
-                <h3>Betty glitter heel</h3>
-                <p style="color: #bbb; font-size: 14px; margin-bottom: 10px;">Quality at a low price.</p>
-                <p class="price">$75.00</p>
-                <button class="buy-btn" onclick="addToCart('Betty glitter heel')">Add to Cart</button>
+                <img src="images/shoe2.jpg" alt="gold glitter heel" class="shoe-img">
+                <h3>gold glitter heel</h3>
+                <p class="price">$95.00</p>
+                <button class="buy-btn" onclick="interactiveAddToCart('gold glitter heel', 95.00, 'images/shoe2.jpg')">Add to Cart</button>
             </div>
 
             <!-- Shoe 3 -->
             <div class="product-card">
-                <img src="images/shoe3.jpg" alt="My Third Shoe" class="shoe-img">
-                <h3>Betty classy heel</h3>
-                <p style="color: #bbb; font-size: 14px; margin-bottom: 10px;">made with leather.</p>
-                <p class="price">$90.00</p>
-                <button class="buy-btn" onclick="addToCart('Betty classy heel')">Add to Cart</button>
+                <img src="images/shoe3.jpg" alt="leather heel" class="shoe-img">
+                <h3>leather heel</h3>
+                <p class="price">$140.00</p>
+                <button class="buy-btn" onclick="interactiveAddToCart('leather heel', 140.00, 'images/shoe3.jpg')">Add to Cart</button>
             </div>
         </div>
     </main>
