@@ -1,3 +1,5 @@
+> ⚠️ **Cost Optimization Note:** The live cloud infrastructure hosting this shoe application has been spun down to manage active Azure runtime costs [INDEX]. The complete source code, declarative configuration manifests, and successful pipeline deployment history are fully preserved below for engineering review [INDEX].
+
 # 👟 Containerized Static Shoe Store Website
 
 A modern cloud engineering lab demonstrating end-to-end containerization and automated continuous deployment infrastructure. 
